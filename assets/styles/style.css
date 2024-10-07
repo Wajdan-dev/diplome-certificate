@@ -1,0 +1,433 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.main-nav {
+    font-family: 'Roboto', sans-serif;
+    z-index: 8000;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background: #F2F6F9;
+    padding: 0;
+    height: 100%;
+    right: 0;
+    top: 0;
+    box-shadow: -3px 0 10px rgba(0,0,0,.1);
+}
+
+.main-nav .visuallyhidden {
+    display: none;
+}
+
+.main-nav .check {
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main-nav .check .label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: .72rem;
+    line-height: 12px;
+    color: #005e7a;
+    width: 100%;
+    text-align: center;
+    margin: .25rem 0 0;
+    transition: all .1s ease-in;
+}
+
+
+.main-nav .btn-container {
+    display: flex;
+    flex-direction: column;
+}
+.main-nav .btn-container .active {
+    background: #FFFFFF;
+    box-shadow: inset 0 0 0 1px #005e7a!important;
+}
+
+.main-nav .btn-container .mobile-nav-btn {
+    display: none;
+}
+
+.main-nav .btn-container button {
+    width: 68px;
+    height: 68px;
+    border: none;
+    border-radius: 16px;
+    background: #F2F6F9;
+    box-shadow: 4px 4px 4px #e3e7ea,-4px -4px 8px #fff;
+    transition: all .2s ease-in;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    font-size: .68rem;
+    margin: 0 0 1rem;
+}
+
+.main-nav .btn-container .active .icon-nav {
+    color: #00adef!important;
+}
+
+.main-nav .btn-container button .icon-nav {
+    font-size: 2rem;
+    color: #005e7a;
+    width: 100%;
+}
+
+.main-nav .active span {
+    color: #fff!important;
+}
+
+[class^=icon-], [class*=" icon-"] { 
+    speak: never;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.main-nav .btn-container .secret-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    right: 14px;
+    bottom: 1.5rem;
+    cursor: pointer;
+    font-size: .72rem;
+    text-transform: uppercase;
+    color: #005e7a!important;
+    padding: 0 .5rem;
+    box-shadow: 4px 4px 4px #e3e7ea,-4px -4px 8px #fff;
+    transition: all .2s ease-in;
+    width: 64px;
+    height: 32px;
+    border-radius: .25rem;
+}
+.sr-only {
+    border: 0!important;
+    clip: rect(1px,1px,1px,1px)!important;
+    clip-path: inset(50%)!important;
+    height: 1px!important;
+    margin: -1px!important;
+    overflow: hidden!important;
+    padding: 0!important;
+    position: absolute!important;
+    width: 1px!important;
+    white-space: nowrap!important;
+}
+.main-nav .btn-container .secret-label .icon-language {
+    margin: 0 .12rem 0 0;
+}
+
+
+/* main code  */
+
+.certificat .certificat-face--front {
+    line-height: inherit;
+    display: block;
+    font-size: 1rem;
+    scroll-behavior: smooth;
+     
+    width: calc(100% - 90px);
+}
+
+.certificat-face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: transform .8s ease;
+    transform-origin: 50% 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,.3);
+    backface-visibility: hidden;
+}
+::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+  }
+.qr-code {
+    display: none;
+}
+
+.inner-scroll {
+    height: 100vh;
+}
+.ps-container {
+    position: relative;
+}
+
+ 
+.certificat-wrapper {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    line-height: initial;
+    color: #000;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    padding: 2rem;
+}
+.certificat-wrapper {
+    position: relative;
+    display: flex;
+    min-height: 100%;
+    padding: 28px;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.certificat-wrapper .b-container {
+    background: #FFFFFF;
+    background-size: cover;
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    /* text-align: center; */
+    width: 100%; 
+    min-height: calc(100vh - 4rem);
+}
+.certificat-wrapper .b-container .logo {
+    width: 100%;
+    text-align: left;
+}
+.certificat-wrapper .b-container .logo .rep {
+    margin: 0 2.5rem 0 0;
+}
+
+
+.certificat-wrapper .b-container .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem 0 1.5rem;
+}
+
+.certificat-wrapper .b-container .title .inside {
+ font-weight: bold;
+    font-size: 2.5rem;
+    color: #000;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0 0 .5rem;
+    border-top: solid 1px #000000;
+    border-bottom: solid 1px #000000;
+}
+
+.certificat-wrapper .b-container .left {
+     
+    font-size: 1.4rem;
+    
+}
+
+.certificat-wrapper .b-container .left .diplom, .certificat-wrapper .b-container .left .mention-diplom, .certificat-wrapper .b-container .left .parcours {
+    color: #cc4b51;
+}
+.certificat-wrapper .b-container .left .decern {
+    margin: 1.5rem 0;
+}
+.certificat-wrapper .b-container .left .laureat {
+    color: #cc4b51;
+    font-variant-caps: small-caps;
+}
+.certificat-wrapper .b-container .left .laureat span {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.certificat-wrapper .b-container .left .univ-year {
+    margin: 1.5rem 0 0;
+}
+
+.certificat-wrapper .b-container .left .mention span, .certificat-wrapper .b-container .left .credits span {
+    color: #cc4b51;
+}
+
+.certificat-wrapper .b-container .right {
+     
+    padding: 4rem 0 0;
+    background: url(../images/bg-lille-67607907.svg) no-repeat center top;
+    background-size: contain;
+    font-size: 1.4rem;
+}
+
+.certificat-wrapper .b-container .right .signature {
+    margin: 1.5rem 0;
+}
+
+.certificat-wrapper .b-container .right .signature img {
+    max-width: 210px;
+}
+
+.certificat-wrapper .b-container .right .president-name {
+    font-size: 1.5rem; 
+    font-weight: bold;
+}
+
+.certificat-wrapper .b-container .footer {
+    font-size: .8rem;
+     
+    bottom: 2rem;
+}
+/* media query */
+
+@media screen and (min-width: 768px) and (max-height: 450px) {
+    .main-nav {
+        justify-content: space-between;
+    }
+
+    .main-nav .check, .main-nav .btn-container .secret-label {
+        position: initial;
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 1450px) {
+    .certificat-wrapper .b-container .logo .rep {
+        max-width: 140px;
+    }
+
+    .certificat-wrapper .b-container .title .inside {
+        font-size: 2rem;
+    }
+    .certificat-wrapper .b-container .left, .certificat-wrapper .b-container .right {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .main-nav {
+        flex-direction: row;
+        width: 100%;
+        height: 64px;
+        left: 0;
+        top: initial;
+        bottom: 0;
+    }
+
+    .main-nav .btn-container {
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+    .main-nav .btn-container .active {
+        background: #F2F6F9;
+        box-shadow: none;
+        color: #fff!important;
+    }
+    .main-nav .btn-container .active {
+        background: #005E7A!important;
+        box-shadow: none;
+    }
+    .main-nav .btn-container .active .icon-nav, .main-nav .btn-container .active .icon-certified-outline, .main-nav .btn-container .active .label {
+        color: #fff!important;
+    }
+    .main-nav .btn-container .active .icon-nav, .main-nav .btn-container .active .icon-certified-outline, .main-nav .btn-container .active .label {
+        color: #fff!important;
+    }
+    .certificat .certificat-face--front{
+        width: 100%;
+    }
+    .main-nav .btn-container .secret-label {
+        position: initial;
+        margin: 0;
+        font-size: .68rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        background: #FFFFFF;
+        box-shadow: none;
+        padding: .7rem 0;
+        border-radius: 0;
+        padding: 2.6rem 0 0;
+    }
+    .main-nav .btn-container .secret-label .icon-language {
+        width: -moz-fit-content;
+        width: fit-content;
+        height: auto;
+        font-size: 1.5rem;
+        margin: 0 0 .4rem;
+        position: absolute;
+        top: 11px;
+    }
+    .main-nav .btn-container button {
+        width: 100%;
+        background: #FFFFFF;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+    .main-nav .btn-container button .icon-nav {
+        font-size: 1.5rem;
+        margin: .25rem 0;
+    }
+    .main-nav .btn-container button .label {
+        display: block;
+        width: 100%;
+        margin: .25rem 0 0;
+    }
+    .main-nav .btn-container {
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+    .main-nav .check {
+        display: none;
+    }
+    .main-nav .btn-container .mobile-nav-btn{
+        display: block;
+    }
+    .certificat-wrapper .b-container .logo .rep {
+        max-width: 110px;
+        margin: .5rem 1rem 0 0;
+    }
+    .certificat-wrapper .b-container .logo .lille {
+        max-width: 120px;
+        margin: .5rem 0 0;
+    }
+    .certificat-wrapper .b-container .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .certificat-wrapper .b-container .title .inside {
+        font-size: 1.2rem;
+        margin: 1rem 0 0;
+    }
+    .certificat-wrapper .b-container .left, .certificat-wrapper .b-container .right {
+        font-size: 1rem;
+    }
+}

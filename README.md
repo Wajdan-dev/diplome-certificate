@@ -1,1 +1,0 @@
-# diplome-certificate
