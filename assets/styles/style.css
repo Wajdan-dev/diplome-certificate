@@ -142,6 +142,16 @@ img {
     margin: 0 .12rem 0 0;
 }
 
+.icon-share img{
+    width: 52px;
+    height: 32px;
+    object-fit: contain;
+}
+.icon-language img{
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+}
 
 /* main code  */
 
